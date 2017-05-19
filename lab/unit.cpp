@@ -24,6 +24,24 @@
 		{
 			cout << "\nDestructor was used here\n";
 		}
-	
+	class neutral unit
+		{
+			private:
+			int dmg2, hp3;
+			int static arm1;
+			public: 
+			unit (int dmg2, int static arm1, int hp3) 
+				{
+					this -> dmg2 = dmg2;
+					this -> arm1 = arm1;
+					this -> hp3 = hp3;
+					
+					class tip
+						{
+							int inv = invulnerable;
+							Bool inv = true;
+						}
+				}
+				};		
 	
 	#endif

@@ -8,7 +8,10 @@
 		string name;
 		string race;
 		
-		cout << "Enter your name ";
+		Base base_obj;
+		wlk_d wlk_obj;
+		
+		show_who (base_obj);
 		cin >> name;
 		cout << "specify your race";	
 		cout << "Write orc if you whant be orc(more attack and hp) or human(more armor) if you whant be human:";
@@ -21,10 +24,12 @@
 			if (race == "human")
 			{
 				cout << "Welcome to aliance\n";
-				unit Vasiliy(40, 30, 175);
+				unit Vasiliy(46, 30, 175);
 			}		
 			return 0;
 	}
+ 		show_who(wlk_obj);				
+			
 			int battle; 
 			{
 	bool attack;
@@ -34,8 +39,13 @@
 	attack = true;
 		if (attack == true) 
  			 {
-				int test::N = 30; 
-				unit Skeleton (30, 6, 175 - N);
+				unit Skeleton (30, 6, 40);
+				
+				Skeleton operator = (Skeleton &unit)
+				{
+					return Skeleton(this->dmg = unit.dmg, this->def = unit.def, this->hp = unit.hp);
+				}
+
 		bool attack = false;
 				
   			}
@@ -43,5 +53,7 @@
   			{
 				cout << "You noob";
   			}
+  			
 		return battle;
 		}
+		
